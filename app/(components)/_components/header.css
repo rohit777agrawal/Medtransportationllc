@@ -1,0 +1,40 @@
+.header__container{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 40% 50%;
+    gap: 10%;
+    height: 10vh;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.header_center_align{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+}
+
+.header_logo{
+    padding: 0px;
+}
+
+.header_nav{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+}
+
+nav{
+    display: flex;
+}
+
+nav a{
+    display: flex;
+    margin: auto;
+    padding: 0.9rem;
+    font-size: 1.1rem;
+    color: var(--primary-color);
+}
+

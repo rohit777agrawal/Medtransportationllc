@@ -1,0 +1,106 @@
+.home__container{
+    display: grid;
+    grid-template-columns: 35% 50%;
+    gap: 15%;
+}
+
+.home_image{
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 2rem;
+    background: linear-gradient(45deg, transparent, var(--color-primary), transparent);
+    display: grid;
+    place-items: center;
+}
+
+.home_image_actual{
+    border-radius: 2rem;
+    overflow: hidden;
+    transform: rotate(10deg);
+    transition: var(--transition);
+    aspect-ratio: 1;
+}
+
+.home_image_actual:hover{
+    transform: rotate(0deg);
+}
+
+.service_home{
+    margin-top: 120px;
+    background-color: var(--color-bg-variant);
+}
+
+.service_box{
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+}
+
+.each_service_box{
+    display: flex;
+    border-radius: 26px;
+    flex-direction: column;
+    padding: 48px 40px;
+    box-shadow: 3px 3px 20px rgba(33, 41, 77, .15);
+    background-color: var(--color-bg);
+}
+
+.each_service_box:hover{
+    transform: translate3d(0px, 1px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+    border-color: rgb(230, 237, 255);
+}
+
+.service_box_icon{
+    width: 56px;
+    height: 56px;
+    background-color: var(--color-variant);
+    border-radius: 26px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+
+
+
+/* Media Queries (Medium Devices) Tablets */
+@media  screen and (max-width: 1024px) {
+    .home__container{
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    .home{
+        width: 50%;
+        margin: 2rem auto 4rem;
+    }
+    .home__content p{
+        margin: 1rem 0 1.5rem;
+
+    }
+}
+
+/* Media Queries (Small Devices) Mobile */
+@media  screen and (max-width: 600px) {
+    .home{
+        width: 65%;
+        margin: 0rem auto 3rem;
+    }
+    .home__cards{
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .home__content{
+        text-align: center;
+    }
+
+    .home__content p{
+        margin: 1.5rem 0;
+    }
+    .home__content {
+        align-items: center;
+    }
+}
